@@ -586,7 +586,7 @@ $$
 y = e^{-\int P(x) dx}\left( \int Q(x) e^{\int P(x) dx} dx + C \right)
 $$
 
-这就是通解公式，其中 $C e^{-\int P(x) dx}$ 是**齐次通解**，$ e^{-\int P(x) dx} \int Q(x) e^{\int P(x) dx} dx $ 是**一个非齐次特解**。
+这就是通解公式，其中 $C e^{-\int P(x) dx}$ 是**齐次通解**，$ e^{-\int P(x) dx} \cdot \int Q(x) e^{\int P(x) dx} dx $ 是**一个非齐次特解**。
 
 ---
 
@@ -608,58 +608,53 @@ $$
    >注：若不加干预，再求导会出现 $u_i''$，方程会复杂化
    为了保持简洁，我们**人为选择**一个约束条件：$u_1' y_1 + u_2' y_2 = 0$
    （因为两个变量，只有一个原方程这一个约束条件解不出来，必须额外加一个约束条件）
-
 5. 再代入原式，得：
+   $\left( u_1' y_1' + u_2' y_2' + u_1 y_1'' + u_2 y_2'' \right) + P(x)\left( u_1 y_1' + u_2 y_2' \right) + Q(x)\left( u_1 y_1 + u_2 y_2 \right) = R(x)$
 
-$$
-\begin{aligned}
-   \left( u_1' y_1' + u_2' y_2' + u_1 y_1'' + u_2 y_2'' \right) + P(x)\left( u_1 y_1' + u_2 y_2' \right) + Q(x)\left( u_1 y_1 + u_2 y_2 \right) &= R(x) \\[4pt]
-   u_1\left( y_1'' + P(x)y_1' + Q(x) y_1 \right) + u_2\left( y_2'' + P(x)y_2' + Q(x) y_2 \right) + u_1' y_1' + u_2' y_2' &= R(x) \\[4pt]
-\end{aligned}
-$$
-
+   化简得：
+   $u_1\left( y_1'' + P(x)y_1' + Q(x) y_1 \right) + u_2\left( y_2'' + P(x)y_2' + Q(x) y_2 \right) + u_1' y_1' + u_2' y_2' = R(x)$
 6. 因为$y_1，y_2$都是齐次方程的解，则：
->$$
-\begin{aligned}
-   y_1'' + P(x)y_1' + Q(x) y_1 &= 0 \\[4pt]
-   y_2'' + P(x)y_2' + Q(x) y_2 &= 0 \\[4pt]
-\end{aligned}
-$$
+   >$$
+   \begin{aligned}
+      y_1'' + P(x)y_1' + Q(x) y_1 &= 0 \\[4pt]
+      y_2'' + P(x)y_2' + Q(x) y_2 &= 0 \\[4pt]
+   \end{aligned}
+   $$
 
-故 $u_1' y_1' + u_2' y_2' = R(x)$
+   故 $u_1' y_1' + u_2' y_2' = R(x)$
 
 7. 联立：
 
->$$
-\begin{cases}
-   \begin{aligned}
-      u_1' y_1 + u_2' y_2 &= 0 \\
-      u_1' y_1' + u_2' y_2' &= R(x) \\
-   \end{aligned}
-\end{cases}
-$$
+   >$$
+   \begin{cases}
+      \begin{aligned}
+         u_1' y_1 + u_2' y_2 &= 0 \\
+         u_1' y_1' + u_2' y_2' &= R(x) \\
+      \end{aligned}
+   \end{cases}
+   $$
 
 8. 解出来$u_1'，u_2'$，然后再积分，求出$u_1，u_2$
 
-那么非齐次通解$y$就求出来了（其中 $y = u_1 y_1 + u_2 y_2$）
+   那么非齐次通解$y$就求出来了（其中 $y = u_1 y_1 + u_2 y_2$）
 
->这个 $u_1' y_1 + u_2' y_2 = 0$ 的选择是计算上最简便的，你固然可以让 $u_1' y_1 + u_2' y_2$ 等于其他的，如1，2，如其他函数等等，但它们不好分离变量直接解出
+   >这个 $u_1' y_1 + u_2' y_2 = 0$ 的选择是计算上最简便的，你固然可以让 $u_1' y_1 + u_2' y_2$ 等于其他的，如1，2，如其他函数等等，但它们不好分离变量直接解出
 
-对于 $n$ 阶，与二阶同理，我们需要 $n-1$ 个约束条件，而且把$u_1, u_2$除一阶外的高阶导数全都用同样的方法，令其为0，代入原方程后，因为$y_i$都是齐次解，最后只剩$u_i' y_i^{(n-1)}=R(x) $，式子如下：
+   对于 $n$ 阶，与二阶同理，我们需要 $n-1$ 个约束条件，而且把$u_1, u_2$除一阶外的高阶导数全都用同样的方法，令其为0，代入原方程后，因为$y_i$都是齐次解，最后只剩$u_i' y_i^{(n-1)}=R(x) $，式子如下：
 
->$$
-\begin{cases}
-   \begin{aligned}
-      \sum_{i=1}^{n} u_i' y_i &= 0\\
-      \sum_{i=1}^{n} u_i' y_i' &= 0\\ 
-      &\cdots \\
-      \sum_{i=1}^{n} u_i' y_i^{(n-2)} &= 0 \\
-      \sum_{i=1}^{n} u_i' y_i^{(n-1)} &= R(x) \\
-   \end{aligned}
-\end{cases}
-$$
+   >$$
+   \begin{cases}
+      \begin{aligned}
+         \sum_{i=1}^{n} u_i' y_i &= 0\\
+         \sum_{i=1}^{n} u_i' y_i' &= 0\\ 
+         &\cdots \\
+         \sum_{i=1}^{n} u_i' y_i^{(n-2)} &= 0 \\
+         \sum_{i=1}^{n} u_i' y_i^{(n-1)} &= R(x) \\
+      \end{aligned}
+   \end{cases}
+   $$
 
-以保证前 $n-1$ 阶导数中不出现 $u_i$ 除一外的高阶导数，最终得到一个关于 $u_i'$ 的线性方程组，系数朗斯基行列式非零，可唯一求解。
+   以保证前 $n-1$ 阶导数中不出现 $u_i$ 除一外的高阶导数，最终得到一个关于 $u_i'$ 的线性方程组，系数朗斯基行列式非零，可唯一求解。
 
 ---
 
@@ -730,14 +725,14 @@ $$
 既然 $Q$ 是 $m$ 次多项式，就可以把它展开成一般形式：
 
 $$
-Q(x) = A_m x^m + A_{m-1} x^{m-1} + \cdots + A_1 x + A_0,
+Q(x) = A_m x^m + A_{m-1} x^{m-1} + \cdots + A_0,
 $$
 
 其中 $A_m, A_{m-1}, \cdots, A_0$ 是待定常数。
 
 于是特解为
 >$$
-y^* = e^{\lambda x} \big( A_m x^m + A_{m-1} x^{m-1} + \cdots + A_1 x + A_0 \big)
+y^* = e^{\lambda x} \big( A_m x^m + A_{m-1} x^{m-1} + \cdots + A_0 \big)
 $$
 
 ---
@@ -939,9 +934,11 @@ $$
    求导$y_2'=u'(x)y_1+u(x)y_1'$，
    $y_2''=u''(x)y_1+2u'(x)y_1'+u(x)y_1''$，
    代入$y'' + a y' + b y = 0$，
+   得$[u''(x)y_1+2u'(x)y_1'+u(x)y_1'']+a[u'(x)y_1+u(x)y_1']+b[u(x)y_1]=0$
+   化简得：
    $$
       \begin{aligned}
-         \text{左式}&=(u''(x)y_1+2u'(x)y_1'+u(x)y_1'')+a(u'(x)y_1+u(x)y_1')+b(u(x)y_1) \\[4pt]
+         \text{左式}
          &=u(x)(y_1'' + a y_1' + b y_1)+u'(x)(2y_1'+ay_1)+ u''(x) y_1 \\[4pt]
          &=0+u'(x)(2 y_1'+a y_1)+ u''(x) y_1 \\[4pt]
          &=u'(x)(2 y_1'+b y_1)+ u''(x) y_1 \\[4pt]
@@ -1132,16 +1129,10 @@ y^* &= e^{\lambda x}Q(x) \\[4pt]
 $$ 
 
 代入原方程：
-
-$$
-\left[ e^{\lambda x}\,Q(x) + 2 e^{\lambda x}\,Q'(x) + e^{\lambda x}\,Q''(x) \right]  + a \left[ e^{\lambda x}\,Q(x) + e^{\lambda x}\,Q'(x) \right] + b \left[ e^{\lambda x}Q(x) \right] = e^{\lambda x} \, P_m(x)
-$$
+$\left[ e^{\lambda x}\,Q(x) + 2 e^{\lambda x}\,Q'(x) + e^{\lambda x}\,Q''(x) \right]  + a \left[ e^{\lambda x}\,Q(x) + e^{\lambda x}\,Q'(x) \right] + b \left[ e^{\lambda x}Q(x) \right] = e^{\lambda x} \, P_m(x)$
 
 整理得：
-
-$$
-e^{\lambda x} \left[ Q(x)'' + (2\lambda+a)Q(x)' + (\lambda^2+a\lambda+b)Q(x) \right] = e^{\lambda x} \, P_m(x)
-$$
+$e^{\lambda x} \left[ Q(x)'' + (2\lambda+a)Q(x)' + (\lambda^2+a\lambda+b)Q(x) \right] = e^{\lambda x} \, P_m(x)$
 
 故：
 
@@ -1173,14 +1164,10 @@ $$
    $$
 
 4. 代入原式：
-   
-   $$
-   \begin{aligned}
-      \text{原式} 
-      &= \left[4(A+B)e^{2x}+4Axe^{2x}\right]-3\left[(A+2B)e^{2x}+2Axe^{2x} \right]+2\left[(Ax+B)e^{2x} \right] \\[4pt]
-      &= Ae^{2x} \\[4pt]
-   \end{aligned}
-   $$
+   $\text{左式} = \left[4(A+B)e^{2x}+4Axe^{2x}\right]-3\left[(A+2B)e^{2x}+2Axe^{2x} \right]+2\left[(Ax+B)e^{2x} \right] = Ae^{2x}$
+   $\text{右式} = e^{2x}$
+   $\text{则}A=1，\text{虽然} B \text{无法确定，但可以被齐次解的任意常数合并同类项}$
+   $\text{则非齐次特解}y^*=xe^{2x}，\text{即齐次通解}y=C_1\,e^x+C_2\,e^{2x}+xe^{2x} $
 
    这里面所有和$B$有关的$e^{2x}$项直接和为0，这不是巧合
    
@@ -2291,7 +2278,8 @@ $$
 **5. 写出原方程的通解**
 
 $$
-y = C_1 e^x + C_2 e^{2x} - x e^x + \dfrac{3}{10} \cos x + \dfrac{1}{10} \sin x  \quad \left( C_1,C_2\text{为任意常数} \right) 
+y = C_1 e^x + C_2 e^{2x} - x e^x + \dfrac{3}{10} \cos x + \dfrac{1}{10} \sin x  
+\left( C_1,C_2\text{为任意常数} \right) 
 $$
 
 ---
@@ -2389,215 +2377,330 @@ $$
 
 [跳回正文](#47-适用范围)
 
-方程：
-$$
-x^3y''' + x^2y'' - 4xy' = 3x^2
-$$
+**例1**：$x^3y''' + x^2y'' - 4xy' = 3x^2$
 
-**解**：
+   **解**：
+
+   **第一步：变量代换，化归为常系数方程。**
+
+   令 $x = e^t$，则 $t = \ln x$。我们需要把对 $x$ 的导数转化成对 $t$ 的导数。
+
+   由链式法则，$\dfrac{dy}{dx} = \dfrac{dy}{dt} \cdot \dfrac{dt}{dx} = \dfrac{1}{x} \cdot \dfrac{dy}{dt}$，
+   所以：
+   $$
+   xy' = \frac{dy}{dt}
+   $$
+
+   对 $x$ 的二阶导数：
+   $$
+   \begin{aligned}
+   y'' &= \frac{d}{dx}\left( \frac{1}{x} \frac{dy}{dt} \right) \\[4pt]
+   &= -\frac{1}{x^2} \frac{dy}{dt} + \frac{1}{x} \cdot \frac{d}{dx}\left( \frac{dy}{dt} \right) \\[4pt]
+   &= -\frac{1}{x^2} \frac{dy}{dt} + \frac{1}{x} \cdot \left( \frac{1}{x} \frac{d^2y}{dt^2} \right) \\[4pt]
+   &= \frac{1}{x^2}\left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) \\[4pt]
+   \end{aligned}
+   $$
+   所以：
+   $$
+   x^2 y'' = \frac{d^2y}{dt^2} - \frac{dy}{dt}
+   $$
+
+   对 $x$ 的三阶导数：
+   $$
+   \begin{aligned}
+   y''' &= \frac{d}{dx}\left[ \frac{1}{x^2}\left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) \right] \\[4pt]
+   &= -\frac{2}{x^3}\left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) + \frac{1}{x^2} \cdot \frac{d}{dx}\left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) \\[4pt]
+   &= -\frac{2}{x^3}\left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) + \frac{1}{x^2} \cdot \frac{1}{x}\left( \frac{d^3y}{dt^3} - \frac{d^2y}{dt^2} \right) \\[4pt]
+   &= \frac{1}{x^3}\left( \frac{d^3y}{dt^3} - 3\frac{d^2y}{dt^2} + 2\frac{dy}{dt} \right) \\[4pt]
+   \end{aligned}
+   $$
+   所以：
+   $$
+   x^3 y''' = \frac{d^3y}{dt^3} - 3\frac{d^2y}{dt^2} + 2\frac{dy}{dt}
+   $$
+
+   **或者这样写：**
+
+   令 $x = e^t$，则 $t = \ln x$。我们把对 $x$ 的导数转化成对 $t$ 的导数。
+   >
+   **一阶导数**
+
+   $$
+   \begin{aligned}
+   y'(x) &= \frac{dy}{dx} \\[4pt]
+   &= \frac{dy}{dt} \cdot \frac{dt}{dx} \\[4pt]
+   &= y'(t) \cdot \frac{1}{x} \\[4pt]
+   \\
+   xy'(x) &= y'(t) \\[4pt]
+   \end{aligned}
+   $$
+
+   **二阶导数**
+
+   $$
+   \begin{aligned}
+   y''(x) &= \big[ y'(x) \big]' \\[4pt]
+   &= \left[ \frac{1}{x} \, y'(t) \right]' \\[4pt]
+   &= \left( \frac{1}{x} \right)' \cdot y'(t) + \frac{1}{x} \cdot \big[ y'(t) \big]' \\[4pt]
+   &= -\frac{1}{x^2} \cdot y'(t) + \frac{1}{x} \cdot \big( y''(t) \cdot t' \big) \\[4pt]
+   &= -\frac{1}{x^2} y'(t) + \frac{1}{x} \cdot \left( y''(t) \cdot \frac{1}{x} \right) \\[4pt]
+   &= \frac{1}{x^2} \big[ y''(t) - y'(t) \big] \\[4pt]
+   \\
+   x^2 y''(x) &= y''(t) - y'(t) \\[4pt]
+   \end{aligned}
+   $$
+
+   **三阶导数**
+
+   $$
+   \begin{aligned}
+   y'''(x) 
+   &= \big[ y''(x) \big]' \\[4pt]
+   &= \left[ \frac{1}{x^2} \big( y''(t) - y'(t) \big) \right]' \\[4pt]
+   &= \left( \frac{1}{x^2} \right)' \cdot \big( y''(t) - y'(t) \big) + \frac{1}{x^2} \cdot \big[ y''(t) - y'(t) \big]' \\[4pt]
+   &= -\frac{2}{x^3} \cdot \big( y''(t) - y'(t) \big) + \frac{1}{x^2} \cdot \big( \big[ y''(t) \big]' - \big[ y'(t) \big]' \big) \\[4pt]
+   \end{aligned}
+   $$
+
+   其中
+
+   $$
+   \begin{aligned}
+      \big[ y''(t) \big]' &= y'''(t) \cdot t' = y'''(t) \cdot \frac{1}{x}, \\[4pt]
+      \big[ y'(t) \big]' &= y''(t) \cdot t' = y''(t) \cdot \frac{1}{x} \\[4pt]
+   \end{aligned}
+   $$
+
+   代入得
+
+   $$
+   \begin{aligned}
+   y'''(x) 
+   &= -\frac{2}{x^3} \big( y''(t) - y'(t) \big) + \frac{1}{x^2} \cdot \left( \frac{1}{x} y'''(t) - \frac{1}{x} y''(t) \right) \\[4pt]
+   &= -\frac{2}{x^3} y''(t) + \frac{2}{x^3} y'(t) + \frac{1}{x^3} y'''(t) - \frac{1}{x^3} y''(t) \\[4pt]
+   &= \frac{1}{x^3} \big[ y'''(t) - 3y''(t) + 2y'(t) \big] \\[4pt]
+   \\
+   x^3 y'''(x) &= y'''(t) - 3y''(t) + 2y'(t) \\[4pt]
+   \end{aligned}
+   $$
+
+---
+
+   **第二步：代入原方程。**
+
+   原方程左边 = $x^3y''' + x^2y'' - 4xy'$，将上面三个关系代入：
+
+   $$
+   \begin{aligned}
+   \text{左边} 
+   &= \left( \frac{d^3y}{dt^3} - 3\frac{d^2y}{dt^2} + 2\frac{dy}{dt} \right) + \left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) - 4\left( \frac{dy}{dt} \right) \\[4pt]
+   &= \frac{d^3y}{dt^3} - 2\frac{d^2y}{dt^2} - 3\frac{dy}{dt} \\[4pt]
+   \end{aligned}
+   $$
+
+   右边 $3x^2$ 换为 $3e^{2t}$。于是原方程化为常系数方程：
+
+   $$
+   y'''(t) - 2y''(t) - 3y'(t) = 3e^{2t}
+   $$
+
+---
+
+   **第三步：求齐次通解。**
+
+   齐次方程为 $y''' - 2y'' - 3y' = 0$。
+
+   写出特征方程：$r^3 - 2r^2 - 3r = 0$。
+
+   因式分解：
+   $$
+   r(r^2 - 2r - 3) = r(r - 3)(r + 1) = 0
+   $$
+
+   特征根：$r_1 = 0$，$r_2 = 3$，$r_3 = -1$。
+
+   三个特征根互异且均为实数，故齐次通解为：
+
+   $$
+   y_h(t) = C_1 e^{0 \cdot t} + C_2 e^{3t} + C_3 e^{-t} = C_1 + C_2 e^{3t} + C_3 e^{-t}
+   $$
+
+---
+
+   **第四步：求一个非齐次特解。**
+
+   右边为 $3e^{2t}$，是指数函数 $e^{\lambda t}$ 型，其中 $\lambda = 2$。
+
+   因为 $2$ 不是特征根（特征根为 $0, 3, -1$），所以根据待定系数法，设特解形式为：
+
+   $$
+   y_p(t) = A e^{2t},
+   $$
+   其中 $A$ 是待定常数。
+
+   求导：
+   $$
+   \begin{aligned}
+   y_p'(t) &= 2A e^{2t}, \\[4pt]
+   y_p''(t) &= 4A e^{2t}, \\[4pt]
+   y_p'''(t) &= 8A e^{2t} \\[4pt]
+   \end{aligned}
+   $$
+
+   代入非齐次方程 $y''' - 2y'' - 3y' = 3e^{2t}$：
+
+   $$
+   \begin{aligned}
+   \text{左边} &= 8A e^{2t} - 2 \cdot 4A e^{2t} - 3 \cdot 2A e^{2t} \\[4pt]
+   &= (8A - 8A - 6A) e^{2t} \\[4pt]
+   &= -6A e^{2t}
+   \end{aligned}
+   $$
+
+   令其等于右边 $3e^{2t}$，得 $-6A = 3$，解得 $A = -\dfrac{1}{2}$。
+
+   因此一个特解为：
+
+   $$
+   y_p(t) = -\frac{1}{2} e^{2t}
+   $$
+
+---
+
+   **第五步：写出通解并代回原变量。**
+
+   常系数方程的通解 = 齐次通解 + 非齐次特解：
+
+   $$
+   y(t) = C_1 + C_2 e^{3t} + C_3 e^{-t} - \frac{1}{2} e^{2t}
+   $$
+
+   由 $x = e^t$，有 $t = \ln x$，以及 $e^{kt} = (e^t)^k = x^k$。
+   代入得：
+
+   $$
+   y(x) = C_1 + C_2 x^3 + C_3 x^{-1} - \frac{1}{2} x^2
+   $$
+
+---
+
+**例2：**$(2x-1)^2 y'' + 4(2x-1)y' - 8y = 4x-3 $
+
+**解**：  
 
 **第一步：变量代换，化归为常系数方程。**
 
-令 $x = e^t$，则 $t = \ln x$。我们需要把对 $x$ 的导数转化成对 $t$ 的导数。
+令 $t = \ln(2x-1)$，则 $2x-1 = e^t$，$x = \dfrac{e^t+1}{2}$。  
+将对 $x$ 的导数转换为对 $t$ 的导数。
 
-由链式法则，$\dfrac{dy}{dx} = \dfrac{dy}{dt} \cdot \dfrac{dt}{dx} = \dfrac{1}{x} \cdot \dfrac{dy}{dt}$，
-所以：
-$$
-xy' = \frac{dy}{dt}
-$$
+由链式法则：
+$\dfrac{dy}{dx} = \dfrac{dy}{dt} \cdot \dfrac{dt}{dx}$ 
 
-对 $x$ 的二阶导数：
+则$\dfrac{dt}{dx} = \dfrac{2}{2x-1} = \dfrac{2}{e^t}$。
+所以
 $$
 \begin{aligned}
-y'' &= \frac{d}{dx}\left( \frac{1}{x} \frac{dy}{dt} \right) \\[4pt]
-&= -\frac{1}{x^2} \frac{dy}{dt} + \frac{1}{x} \cdot \frac{d}{dx}\left( \frac{dy}{dt} \right) \\[4pt]
-&= -\frac{1}{x^2} \frac{dy}{dt} + \frac{1}{x} \cdot \left( \frac{1}{x} \frac{d^2y}{dt^2} \right) \\[4pt]
-&= \frac{1}{x^2}\left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) \\[4pt]
-\end{aligned}
-$$
-所以：
-$$
-x^2 y'' = \frac{d^2y}{dt^2} - \frac{dy}{dt}
-$$
-
-对 $x$ 的三阶导数：
-$$
-\begin{aligned}
-y''' &= \frac{d}{dx}\left[ \frac{1}{x^2}\left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) \right] \\[4pt]
-&= -\frac{2}{x^3}\left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) + \frac{1}{x^2} \cdot \frac{d}{dx}\left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) \\[4pt]
-&= -\frac{2}{x^3}\left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) + \frac{1}{x^2} \cdot \frac{1}{x}\left( \frac{d^3y}{dt^3} - \frac{d^2y}{dt^2} \right) \\[4pt]
-&= \frac{1}{x^3}\left( \frac{d^3y}{dt^3} - 3\frac{d^2y}{dt^2} + 2\frac{dy}{dt} \right) \\[4pt]
-\end{aligned}
-$$
-所以：
-$$
-x^3 y''' = \frac{d^3y}{dt^3} - 3\frac{d^2y}{dt^2} + 2\frac{dy}{dt}
-$$
-
-或者这样写：
-
-令 $x = e^t$，则 $t = \ln x$。我们把对 $x$ 的导数转化成对 $t$ 的导数。
->
-**一阶导数**
-
-$$
-\begin{aligned}
-y'(x) &= \frac{dy}{dx} \\[4pt]
-&= \frac{dy}{dt} \cdot \frac{dt}{dx} \\[4pt]
-&= y'(t) \cdot \frac{1}{x} \\[4pt]
-\\
-xy'(x) &= y'(t) \\[4pt]
+   (2x-1) y' 
+   &= e^t \cdot \dfrac{dy}{dx} \\
+   &= e^t \cdot \left( \dfrac{dy}{dt} \cdot \dfrac{2}{e^t} \right) \\ 
+   &= 2\,\dfrac{dy}{dt} \\
 \end{aligned}
 $$
 
-**二阶导数**
-
+二阶导数：
 $$
 \begin{aligned}
-y''(x) &= \big[ y'(x) \big]' \\[4pt]
-&= \left[ \frac{1}{x} \, y'(t) \right]' \\[4pt]
-&= \left( \frac{1}{x} \right)' \cdot y'(t) + \frac{1}{x} \cdot \big[ y'(t) \big]' \\[4pt]
-&= -\frac{1}{x^2} \cdot y'(t) + \frac{1}{x} \cdot \big( y''(t) \cdot t' \big) \\[4pt]
-&= -\frac{1}{x^2} y'(t) + \frac{1}{x} \cdot \left( y''(t) \cdot \frac{1}{x} \right) \\[4pt]
-&= \frac{1}{x^2} \big[ y''(t) - y'(t) \big] \\[4pt]
-\\
-x^2 y''(x) &= y''(t) - y'(t) \\[4pt]
+   \dfrac{d^2y}{dx^2} 
+   &= \dfrac{d}{dx}\left( \dfrac{dy}{dx} \right) \\
+   &= \dfrac{d}{dt}\left( \dfrac{dy}{dx} \right) \cdot \dfrac{dt}{dx} \\
+   &= \dfrac{d}{dt}\left( \dfrac{2}{e^t}\dfrac{dy}{dt} \right) \cdot \dfrac{2}{e^t} \\
 \end{aligned}
 $$
 
-**三阶导数**
-
+计算内层导数：
 $$
 \begin{aligned}
-y'''(x) 
-&= \big[ y''(x) \big]' \\[4pt]
-&= \left[ \frac{1}{x^2} \big( y''(t) - y'(t) \big) \right]' \\[4pt]
-&= \left( \frac{1}{x^2} \right)' \cdot \big( y''(t) - y'(t) \big) + \frac{1}{x^2} \cdot \big[ y''(t) - y'(t) \big]' \\[4pt]
-&= -\frac{2}{x^3} \cdot \big( y''(t) - y'(t) \big) + \frac{1}{x^2} \cdot \big( \big[ y''(t) \big]' - \big[ y'(t) \big]' \big) \\[4pt]
+   \dfrac{d}{dt}\left( \dfrac{2}{e^t}\dfrac{dy}{dt} \right) 
+   &= -\dfrac{2}{e^t}\dfrac{dy}{dt} + \dfrac{2}{e^t}\dfrac{d^2y}{dt^2}   \\
+   &= \dfrac{2}{e^t}\left( \dfrac{d^2y}{dt^2} - \dfrac{dy}{dt} \right)   \\
 \end{aligned}
 $$
 
-其中
-
+因此
 $$
 \begin{aligned}
-   \big[ y''(t) \big]' &= y'''(t) \cdot t' = y'''(t) \cdot \frac{1}{x}, \\[4pt]
-   \big[ y'(t) \big]' &= y''(t) \cdot t' = y''(t) \cdot \frac{1}{x} \\[4pt]
+   (2x-1)^2 y'' 
+   &= e^{2t} \cdot \dfrac{d^2y}{dx^2} \\
+   &= e^{2t} \cdot \left[ \dfrac{2}{e^t} \cdot \dfrac{2}{e^t}\left( \dfrac{d^2y}{dt^2} - \dfrac{dy}{dt} \right) \right] \\
+   &= 4\left( \dfrac{d^2y}{dt^2} - \dfrac{dy}{dt} \right) \\
 \end{aligned}
 $$
 
-代入得
 
-$$
-\begin{aligned}
-y'''(x) 
-&= -\frac{2}{x^3} \big( y''(t) - y'(t) \big) + \frac{1}{x^2} \cdot \left( \frac{1}{x} y'''(t) - \frac{1}{x} y''(t) \right) \\[4pt]
-&= -\frac{2}{x^3} y''(t) + \frac{2}{x^3} y'(t) + \frac{1}{x^3} y'''(t) - \frac{1}{x^3} y''(t) \\[4pt]
-&= \frac{1}{x^3} \big[ y'''(t) - 3y''(t) + 2y'(t) \big] \\[4pt]
-\\
-x^3 y'''(x) &= y'''(t) - 3y''(t) + 2y'(t) \\[4pt]
-\end{aligned}
-$$
+将上述结果代入原方程：
+$4\left( y''(t) - y'(t) \right) + 4\cdot 2 y'(t) - 8y = 4x-3$。
+注意 $4x-3 = 4\cdot\dfrac{e^t+1}{2} - 3 = 2e^t + 2 - 3 = 2e^t - 1$。
+化简得：
+$y''(t) + y'(t) - 2y = \dfrac{1}{2}e^t - \dfrac{1}{4}$。
 
----
+**第二步：求齐次通解。**
 
-**第二步：代入原方程。**
+齐次方程 $y'' + y' - 2y = 0$ 的特征方程为：
+$r^2 + r - 2 = 0 \quad\Longrightarrow\quad (r+2)(r-1)=0$，
+特征根 $r_1 = 1$，$r_2 = -2$。
+故齐次通解为：
+$y_h(t) = C_1 e^{t} + C_2 e^{-2t}$。
 
-原方程左边 = $x^3y''' + x^2y'' - 4xy'$，将上面三个关系代入：
+**第三步：求一个非齐次特解。**
 
-$$
-\begin{aligned}
-\text{左边} 
-&= \left( \frac{d^3y}{dt^3} - 3\frac{d^2y}{dt^2} + 2\frac{dy}{dt} \right) + \left( \frac{d^2y}{dt^2} - \frac{dy}{dt} \right) - 4\left( \frac{dy}{dt} \right) \\[4pt]
-&= \frac{d^3y}{dt^3} - 2\frac{d^2y}{dt^2} - 3\frac{dy}{dt} \\[4pt]
-\end{aligned}
-$$
+右边为两项之和 $\dfrac{1}{2}e^t - \dfrac{1}{4}$，根据叠加原理分别求特解。
 
-右边 $3x^2$ 换为 $3e^{2t}$。于是原方程化为常系数方程：
+- **对 $\dfrac{1}{2}e^t$**：指数参数 $\lambda = 1$ 是单特征根，故设特解形式 $y_{p1} = A\, t e^{t}$。  
+  求导：
+  $$
+  \begin{aligned}
+      y_{p1}' &= A e^{t}(1+t)  \\
+      y_{p1}'' &= A e^{t}(2+t) \\
+  \end{aligned}
+  $$
 
-$$
-y'''(t) - 2y''(t) - 3y'(t) = 3e^{2t}
-$$
+  代入 $y''+y'-2y$：
 
----
+  $$
+  \begin{aligned} 
+  y_{p1}''+y_{p1}'-2y_{p1} 
+  &= A e^{t}\big[(2+t)+(1+t)-2t\big] \\ 
+  &= A e^{t}(3) \\
+  &= 3A e^{t}
+  \end{aligned}
+  $$
 
-**第三步：求齐次通解。**
+  令其等于 $\dfrac{1}{2}e^{t}$，得 $3A = \dfrac{1}{2}$，
+  即 $A = \dfrac{1}{6}$。
+  所以$y_{p1} = \dfrac{1}{6}\, t e^{t}$。
 
-齐次方程为 $y''' - 2y'' - 3y' = 0$。
+- **对 $-\dfrac{1}{4}$**：可看作 $-\dfrac{1}{4} e^{0\cdot t}$，$\lambda = 0$ 不是特征根，设常数特解 $y_{p2} = B$。  
+  代入得 $0 + 0 - 2B = -\dfrac{1}{4}$，解得 $B = \dfrac{1}{8}$。
+  所以$y_{p2} = \dfrac{1}{8}$。
 
-写出特征方程：$r^3 - 2r^2 - 3r = 0$。
+因此非齐次特解为
+$y_p(t) = y_{p1} + y_{p2} = \dfrac{1}{6}\, t e^{t} + \dfrac{1}{8}$。
 
-因式分解：
-$$
-r(r^2 - 2r - 3) = r(r - 3)(r + 1) = 0
-$$
+**第四步：写出通解并代回原变量。**
 
-特征根：$r_1 = 0$，$r_2 = 3$，$r_3 = -1$。
+常系数方程的通解为
+$y(t) = C_1 e^{t} + C_2 e^{-2t} + \dfrac{1}{6}\, t e^{t} + \dfrac{1}{8}$。
 
-三个特征根互异且均为实数，故齐次通解为：
+由 $t = \ln(2x-1)$，
+有 $e^{t} = 2x-1$，$e^{-2t} = (2x-1)^{-2}$，$t e^{t} = (2x-1)\ln(2x-1)$。
+代入得原方程的通解：
+$y(x) = C_1 (2x-1) + C_2 (2x-1)^{-2} + \dfrac{1}{6}(2x-1)\ln(2x-1) + \dfrac{1}{8}$，
+其中 $C_1, C_2$ 为任意常数。
 
-$$
-y_h(t) = C_1 e^{0 \cdot t} + C_2 e^{3t} + C_3 e^{-t} = C_1 + C_2 e^{3t} + C_3 e^{-t}
-$$
 
----
-
-**第四步：求一个非齐次特解。**
-
-右边为 $3e^{2t}$，是指数函数 $e^{\lambda t}$ 型，其中 $\lambda = 2$。
-
-因为 $2$ 不是特征根（特征根为 $0, 3, -1$），所以根据待定系数法，设特解形式为：
-
-$$
-y_p(t) = A e^{2t},
-$$
-其中 $A$ 是待定常数。
-
-求导：
-$$
-\begin{aligned}
-y_p'(t) &= 2A e^{2t}, \\[4pt]
-y_p''(t) &= 4A e^{2t}, \\[4pt]
-y_p'''(t) &= 8A e^{2t} \\[4pt]
-\end{aligned}
-$$
-
-代入非齐次方程 $y''' - 2y'' - 3y' = 3e^{2t}$：
-
-$$
-\begin{aligned}
-\text{左边} &= 8A e^{2t} - 2 \cdot 4A e^{2t} - 3 \cdot 2A e^{2t} \\[4pt]
-&= (8A - 8A - 6A) e^{2t} \\[4pt]
-&= -6A e^{2t}
-\end{aligned}
-$$
-
-令其等于右边 $3e^{2t}$，得 $-6A = 3$，解得 $A = -\dfrac{1}{2}$。
-
-因此一个特解为：
-
-$$
-y_p(t) = -\frac{1}{2} e^{2t}
-$$
-
----
-
-**第五步：写出通解并代回原变量。**
-
-常系数方程的通解 = 齐次通解 + 非齐次特解：
-
-$$
-y(t) = C_1 + C_2 e^{3t} + C_3 e^{-t} - \frac{1}{2} e^{2t}
-$$
-
-由 $x = e^t$，有 $t = \ln x$，以及 $e^{kt} = (e^t)^k = x^k$。
-代入得：
-
-$$
-y(x) = C_1 + C_2 x^3 + C_3 x^{-1} - \frac{1}{2} x^2
-$$
-
-> 这个例子完整展示了非齐次欧拉方程从变系数到常系数的化归过程：先用链式法则把对 $x$ 的导数转为对 $t$ 的导数，再用待定系数法求常系数方程的特解，最后代回原变量。
+> 这两个例子完整展示了非齐次欧拉方程从变系数到常系数的化归过程：
+> 先用链式法则把对 $x$ 的导数转为对 $t$ 的导数，
+> 再用待定系数法求常系数方程的特解，最后代回原变量。
 
 ---
 
