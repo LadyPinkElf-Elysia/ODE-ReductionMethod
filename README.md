@@ -88,6 +88,7 @@
 这篇文章希望能帮你从“记住方法”走向“理解方法”，从“机械操作”走向“主动构造”，最终让这两种重要的微分方程解法变得**自然、透明、可推理**。
 
 ## 阅读
-> [常数变易法与待定系数法的化归视角](./index.html)
+> [常数变易法与待定系数法的化归视角](https://ladypinkelf-elysia.github.io/ODE-ReductionMethod/)
+> 或者您直接自己输入网址访问，`https://ladypinkelf-elysia.github.io/ODE-ReductionMethod/`
 
 ## 版权声明：本文为原创文章，未经许可禁止转载。
