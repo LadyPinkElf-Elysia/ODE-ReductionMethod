@@ -46473,6 +46473,1807 @@
                               class="mord mtight">2</span><span
                               class="mord mathnormal mtight">x</span></span></span></span></span></span></span></span></span></span></span></span>
     </p>
+    <blockquote>
+      <p><strong>补充：如何计算 <span class="katex"><span class="katex-mathml"><math
+                xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mi>P</mi>
+                          <mo stretchy="false">(</mo>
+                          <mi>D</mi>
+                          <mo>+</mo>
+                          <mi>λ</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\dfrac{1}{P(D+\lambda)}</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal"
+                                style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                                class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace"
+                                style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                                style="margin-right:0.2222em;"></span><span class="mord mathnormal">λ</span><span
+                                class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                              style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.936em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span></span></span></span></strong><br>
+        计算 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+                <mrow>
+                  <mstyle scriptlevel="0" displaystyle="true">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mrow>
+                        <mi>P</mi>
+                        <mo stretchy="false">(</mo>
+                        <mi>D</mi>
+                        <mo>+</mo>
+                        <mi>λ</mi>
+                        <mo stretchy="false">)</mo>
+                      </mrow>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <annotation encoding="application/x-tex">\dfrac{1}{P(D+\lambda)}</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                  class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                      class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                            class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal"
+                              style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                              class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace"
+                              style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                              style="margin-right:0.2222em;"></span><span class="mord mathnormal">λ</span><span
+                              class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                            style="height:3em;"></span><span class="frac-line"
+                            style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                            class="pstrut" style="height:3em;"></span><span class="mord"><span
+                              class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                      class="vlist-r"><span class="vlist"
+                        style="height:0.936em;"><span></span></span></span></span></span><span
+                  class="mclose nulldelimiter"></span></span></span></span></span> 的核心在于：我们只需要它展开到 <span
+          class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+                <mrow>
+                  <msup>
+                    <mi>D</mi>
+                    <mi>m</mi>
+                  </msup>
+                </mrow>
+                <annotation encoding="application/x-tex">D^m</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height:0.6833em;"></span><span class="mord"><span class="mord mathnormal"
+                  style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t"><span
+                      class="vlist-r"><span class="vlist" style="height:0.6644em;"><span
+                          style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                            style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                              class="mord mathnormal mtight">m</span></span></span></span></span></span></span></span></span></span></span>
+        项<br>
+        （因为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+                <mrow>
+                  <msup>
+                    <mi>D</mi>
+                    <mrow>
+                      <mi>m</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+                <annotation encoding="application/x-tex">D^{m+1}</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal"
+                  style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t"><span
+                      class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                          style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                            style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                              class="mord mtight"><span class="mord mathnormal mtight">m</span><span
+                                class="mbin mtight">+</span><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>
+        及以上作用在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+                <mrow>
+                  <mi>m</mi>
+                </mrow>
+                <annotation encoding="application/x-tex">m</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> 次多项式 <span
+          class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+                <mrow>
+                  <msub>
+                    <mi>P</mi>
+                    <mi>m</mi>
+                  </msub>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <annotation encoding="application/x-tex">P_m(x)</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal"
+                  style="margin-right:0.1389em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span
+                      class="vlist-r"><span class="vlist" style="height:0.1514em;"><span
+                          style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut"
+                            style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                              class="mord mathnormal mtight">m</span></span></span></span><span
+                        class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                        style="height:0.15em;"><span></span></span></span></span></span></span><span
+                class="mopen">(</span><span class="mord mathnormal">x</span><span
+                class="mclose">)</span></span></span></span> 上得零）。<br>
+        <strong>方法：形式级数展开</strong>
+      </p>
+      <ol>
+        <li><strong>若<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <semantics>
+                    <mrow>
+                      <mi>λ</mi>
+                    </mrow>
+                    <annotation encoding="application/x-tex">\lambda</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height:0.6944em;"></span><span
+                    class="mord mathnormal">λ</span></span></span></span>不是特征根时</strong>，<span class="katex"><span
+              class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>P</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>λ</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo mathvariant="normal">≠</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">P(\lambda)\neq 0</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                  class="mord mathnormal">λ</span><span class="mclose">)</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel"><span
+                      class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut"
+                            style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="inner"><span
+                              class="mord"><span class="mrel"></span></span></span><span
+                            class="fix"></span></span></span></span></span><span class="mspace nobreak"></span><span
+                    class="mrel">=</span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span
+                class="base"><span class="strut" style="height:0.6444em;"></span><span
+                  class="mord">0</span></span></span></span><br>
+          将 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>P</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>D</mi>
+                    <mo>+</mo>
+                    <mi>λ</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">P(D+\lambda)</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal"
+                  style="margin-right:0.0278em;">D</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span
+                  class="mclose">)</span></span></span></span> 写成常数项加高阶项的形式：<br>
+          <span class="katex-display"><span class="katex"><span class="katex-mathml"><math
+                  xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                  <semantics>
+                    <mrow>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>D</mi>
+                      <mo>+</mo>
+                      <mi>λ</mi>
+                      <mo stretchy="false">)</mo>
+                      <mo>=</mo>
+                      <mi>P</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>λ</mi>
+                      <mo stretchy="false">)</mo>
+                      <mo>+</mo>
+                      <mi>Q</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>D</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <annotation encoding="application/x-tex">P(D+\lambda) = P(\lambda) + Q(D)</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                    style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal"
+                    style="margin-right:0.0278em;">D</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span
+                    class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span
+                    class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span
+                  class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span
+                    class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                    class="mord mathnormal">λ</span><span class="mclose">)</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span
+                    class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                    class="mclose">)</span></span></span></span></span><br>
+          其中 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>Q</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>D</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">Q(D)</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span
+                  class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                  class="mclose">)</span></span></span></span> 是 <span class="katex"><span class="katex-mathml"><math
+                xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>D</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">D</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.6833em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.0278em;">D</span></span></span></span> 的幂次 <span class="katex"><span
+              class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mo>≥</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\ge 1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span><span
+                  class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 的项之和。<br>
+          则：<br>
+          <span class="katex-display"><span class="katex"><span class="katex-mathml"><math
+                  xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                  <semantics>
+                    <mrow>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mrow>
+                            <mi>P</mi>
+                            <mo stretchy="false">(</mo>
+                            <mi>D</mi>
+                            <mo>+</mo>
+                            <mi>λ</mi>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>=</mo>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mrow>
+                            <mi>P</mi>
+                            <mo stretchy="false">(</mo>
+                            <mi>λ</mi>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>⋅</mo>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mrow>
+                            <mn>1</mn>
+                            <mo>+</mo>
+                            <mstyle scriptlevel="0" displaystyle="true">
+                              <mfrac>
+                                <mrow>
+                                  <mi>Q</mi>
+                                  <mo stretchy="false">(</mo>
+                                  <mi>D</mi>
+                                  <mo stretchy="false">)</mo>
+                                </mrow>
+                                <mrow>
+                                  <mi>P</mi>
+                                  <mo stretchy="false">(</mo>
+                                  <mi>λ</mi>
+                                  <mo stretchy="false">)</mo>
+                                </mrow>
+                              </mfrac>
+                            </mstyle>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                    </mrow>
+                    <annotation encoding="application/x-tex">\dfrac{1}{P(D+\lambda)} = \dfrac{1}{P(\lambda)} \cdot
+                      \dfrac{1}{1 + \dfrac{Q(D)}{P(\lambda)}}</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord mathnormal" style="margin-right:0.1389em;">P</span><span
+                                  class="mopen">(</span><span class="mord mathnormal"
+                                  style="margin-right:0.0278em;">D</span><span class="mspace"
+                                  style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                                  style="margin-right:0.2222em;"></span><span class="mord mathnormal">λ</span><span
+                                  class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                                style="height:3em;"></span><span class="frac-line"
+                                style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                          class="vlist-r"><span class="vlist"
+                            style="height:0.936em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                    style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                    style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                    style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord mathnormal" style="margin-right:0.1389em;">P</span><span
+                                  class="mopen">(</span><span class="mord mathnormal">λ</span><span
+                                  class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                                style="height:3em;"></span><span class="frac-line"
+                                style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                          class="vlist-r"><span class="vlist"
+                            style="height:0.936em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                    style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:3.5744em;vertical-align:-2.253em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.11em;"><span
+                                class="pstrut" style="height:3.427em;"></span><span class="mord"><span
+                                  class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                                  class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                                  class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span
+                                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                          style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut"
+                                              style="height:3em;"></span><span class="mord"><span
+                                                class="mord mathnormal" style="margin-right:0.1389em;">P</span><span
+                                                class="mopen">(</span><span class="mord mathnormal">λ</span><span
+                                                class="mclose">)</span></span></span><span style="top:-3.23em;"><span
+                                              class="pstrut" style="height:3em;"></span><span class="frac-line"
+                                              style="border-bottom-width:0.04em;"></span></span><span
+                                            style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span
+                                              class="mord"><span class="mord mathnormal">Q</span><span
+                                                class="mopen">(</span><span class="mord mathnormal"
+                                                style="margin-right:0.0278em;">D</span><span
+                                                class="mclose">)</span></span></span></span><span
+                                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                          style="height:0.936em;"><span></span></span></span></span></span><span
+                                    class="mclose nulldelimiter"></span></span></span></span><span
+                              style="top:-3.657em;"><span class="pstrut" style="height:3.427em;"></span><span
+                                class="frac-line" style="border-bottom-width:0.04em;"></span></span><span
+                              style="top:-4.104em;"><span class="pstrut" style="height:3.427em;"></span><span
+                                class="mord"><span class="mord">1</span></span></span></span><span
+                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                            style="height:2.253em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span></span></span></span></span><br>
+          利用 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mn>1</mn>
+                          <mo>+</mo>
+                          <mi>u</mi>
+                        </mrow>
+                      </mfrac>
+                    </mstyle>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                    <mo>−</mo>
+                    <mi>u</mi>
+                    <mo>+</mo>
+                    <msup>
+                      <mi>u</mi>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>−</mo>
+                    <msup>
+                      <mi>u</mi>
+                      <mn>3</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <mo>⋯</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\dfrac{1}{1+u} = 1 - u + u^2 - u^3 + \cdots</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:2.0908em;vertical-align:-0.7693em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                                class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                                class="mord mathnormal">u</span></span></span><span style="top:-3.23em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.7693em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span><span class="mspace"
+                  style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">u</span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span
+                    class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span
+                    class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">3</span></span></span></span></span></span></span></span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.313em;"></span><span class="minner">⋯</span></span></span></span>（形式级数）：<br>
+          <span class="katex-display"><span class="katex"><span class="katex-mathml"><math
+                  xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                  <semantics>
+                    <mrow>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mrow>
+                            <mi>P</mi>
+                            <mo stretchy="false">(</mo>
+                            <mi>D</mi>
+                            <mo>+</mo>
+                            <mi>λ</mi>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>=</mo>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mrow>
+                            <mi>P</mi>
+                            <mo stretchy="false">(</mo>
+                            <mi>λ</mi>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mrow>
+                        <mo fence="true">(</mo>
+                        <mn>1</mn>
+                        <mo>−</mo>
+                        <mstyle scriptlevel="0" displaystyle="true">
+                          <mfrac>
+                            <mrow>
+                              <mi>Q</mi>
+                              <mo stretchy="false">(</mo>
+                              <mi>D</mi>
+                              <mo stretchy="false">)</mo>
+                            </mrow>
+                            <mrow>
+                              <mi>P</mi>
+                              <mo stretchy="false">(</mo>
+                              <mi>λ</mi>
+                              <mo stretchy="false">)</mo>
+                            </mrow>
+                          </mfrac>
+                        </mstyle>
+                        <mo>+</mo>
+                        <msup>
+                          <mrow>
+                            <mo fence="true">(</mo>
+                            <mstyle scriptlevel="0" displaystyle="true">
+                              <mfrac>
+                                <mrow>
+                                  <mi>Q</mi>
+                                  <mo stretchy="false">(</mo>
+                                  <mi>D</mi>
+                                  <mo stretchy="false">)</mo>
+                                </mrow>
+                                <mrow>
+                                  <mi>P</mi>
+                                  <mo stretchy="false">(</mo>
+                                  <mi>λ</mi>
+                                  <mo stretchy="false">)</mo>
+                                </mrow>
+                              </mfrac>
+                            </mstyle>
+                            <mo fence="true">)</mo>
+                          </mrow>
+                          <mn>2</mn>
+                        </msup>
+                        <mo>−</mo>
+                        <mo>⋯</mo>
+                        <mtext> </mtext>
+                        <mo fence="true">)</mo>
+                      </mrow>
+                    </mrow>
+                    <annotation encoding="application/x-tex">\dfrac{1}{P(D+\lambda)} = \dfrac{1}{P(\lambda)} \left( 1 -
+                      \dfrac{Q(D)}{P(\lambda)} + \left(\dfrac{Q(D)}{P(\lambda)}\right)^2 - \cdots \right)</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord mathnormal" style="margin-right:0.1389em;">P</span><span
+                                  class="mopen">(</span><span class="mord mathnormal"
+                                  style="margin-right:0.0278em;">D</span><span class="mspace"
+                                  style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                                  style="margin-right:0.2222em;"></span><span class="mord mathnormal">λ</span><span
+                                  class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                                style="height:3em;"></span><span class="frac-line"
+                                style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                          class="vlist-r"><span class="vlist"
+                            style="height:0.936em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                    style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                    style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                    style="height:3em;vertical-align:-1.25em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord mathnormal" style="margin-right:0.1389em;">P</span><span
+                                  class="mopen">(</span><span class="mord mathnormal">λ</span><span
+                                  class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                                style="height:3em;"></span><span class="frac-line"
+                                style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                          class="vlist-r"><span class="vlist"
+                            style="height:0.936em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                    style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter"
+                      style="top:0em;"><span class="delimsizing size4">(</span></span><span class="mord">1</span><span
+                      class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span
+                      class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span
+                        class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                            class="vlist-r"><span class="vlist" style="height:1.427em;"><span
+                                style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span
+                                  class="mord"><span class="mord mathnormal"
+                                    style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                                    class="mord mathnormal">λ</span><span class="mclose">)</span></span></span><span
+                                style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span
+                                  class="frac-line" style="border-bottom-width:0.04em;"></span></span><span
+                                style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span
+                                  class="mord"><span class="mord mathnormal">Q</span><span class="mopen">(</span><span
+                                    class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                                    class="mclose">)</span></span></span></span><span
+                              class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                              style="height:0.936em;"><span></span></span></span></span></span><span
+                        class="mclose nulldelimiter"></span></span><span class="mspace"
+                      style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                      style="margin-right:0.2222em;"></span><span class="minner"><span class="minner"><span
+                          class="mopen delimcenter" style="top:0em;"><span
+                            class="delimsizing size3">(</span></span><span class="mord"><span
+                            class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                                class="vlist-r"><span class="vlist" style="height:1.427em;"><span
+                                    style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span
+                                      class="mord"><span class="mord mathnormal"
+                                        style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                                        class="mord mathnormal">λ</span><span class="mclose">)</span></span></span><span
+                                    style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span
+                                      class="frac-line" style="border-bottom-width:0.04em;"></span></span><span
+                                    style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span
+                                      class="mord"><span class="mord mathnormal">Q</span><span
+                                        class="mopen">(</span><span class="mord mathnormal"
+                                        style="margin-right:0.0278em;">D</span><span
+                                        class="mclose">)</span></span></span></span><span
+                                  class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                  style="height:0.936em;"><span></span></span></span></span></span><span
+                            class="mclose nulldelimiter"></span></span><span class="mclose delimcenter"
+                          style="top:0em;"><span class="delimsizing size3">)</span></span></span><span
+                        class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                              style="height:1.654em;"><span style="top:-3.9029em;margin-right:0.05em;"><span
+                                  class="pstrut" style="height:2.7em;"></span><span
+                                  class="sizing reset-size6 size3 mtight"><span
+                                    class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                      class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span
+                      class="mspace" style="margin-right:0.2222em;"></span><span class="minner">⋯</span><span
+                      class="mspace" style="margin-right:0.1667em;"></span><span class="mclose delimcenter"
+                      style="top:0em;"><span
+                        class="delimsizing size4">)</span></span></span></span></span></span></span><br>
+          截断到 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <msup>
+                      <mi>D</mi>
+                      <mi>m</mi>
+                    </msup>
+                  </mrow>
+                  <annotation encoding="application/x-tex">D^m</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.6833em;"></span><span class="mord"><span class="mord mathnormal"
+                    style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.6644em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mathnormal mtight">m</span></span></span></span></span></span></span></span></span></span></span>
+          项即可。<br>
+          <strong>例</strong>：计算 <span class="katex"><span class="katex-mathml"><math
+                xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mo stretchy="false">(</mo>
+                          <mi>D</mi>
+                          <mo>+</mo>
+                          <mn>1</mn>
+                          <msup>
+                            <mo stretchy="false">)</mo>
+                            <mn>2</mn>
+                          </msup>
+                        </mrow>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\dfrac{1}{(D+1)^2}</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mopen">(</span><span class="mord mathnormal"
+                                style="margin-right:0.0278em;">D</span><span class="mspace"
+                                style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                                style="margin-right:0.2222em;"></span><span class="mord">1</span><span
+                                class="mclose"><span class="mclose">)</span><span class="msupsub"><span
+                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span
+                            style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.936em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span></span></span></span> 展开到 <span class="katex"><span
+              class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <msup>
+                      <mi>D</mi>
+                      <mn>1</mn>
+                    </msup>
+                  </mrow>
+                  <annotation encoding="application/x-tex">D^1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal"
+                    style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span>
+          项。<br>
+          <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>P</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>D</mi>
+                    <mo>+</mo>
+                    <mi>λ</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <mo stretchy="false">(</mo>
+                    <mi>D</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mo stretchy="false">)</mo>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                    <mi>D</mi>
+                    <mo>+</mo>
+                    <msup>
+                      <mi>D</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <annotation encoding="application/x-tex">P(D+\lambda) = (D+1)^2 = 1 + 2D + D^2</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal"
+                  style="margin-right:0.0278em;">D</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span
+                  class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span
+                class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span
+                  class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord">1</span><span
+                  class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                  class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span
+                  class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal"
+                    style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>，<span
+            class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>P</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>λ</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">P(\lambda)=1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                  class="mord mathnormal">λ</span><span class="mclose">)</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>，<span
+            class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>Q</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>D</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <mn>2</mn>
+                    <mi>D</mi>
+                    <mo>+</mo>
+                    <msup>
+                      <mi>D</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <annotation encoding="application/x-tex">Q(D)=2D + D^2</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span
+                  class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span
+                  class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span
+                class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span
+                  class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal"
+                    style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>。<br>
+          <span class="katex-display"><span class="katex"><span class="katex-mathml"><math
+                  xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                  <semantics>
+                    <mrow>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mrow>
+                            <mo stretchy="false">(</mo>
+                            <mi>D</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                            <msup>
+                              <mo stretchy="false">)</mo>
+                              <mn>2</mn>
+                            </msup>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>=</mo>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mrow>
+                            <mn>1</mn>
+                            <mo>+</mo>
+                            <mo stretchy="false">(</mo>
+                            <mn>2</mn>
+                            <mi>D</mi>
+                            <mo>+</mo>
+                            <msup>
+                              <mi>D</mi>
+                              <mn>2</mn>
+                            </msup>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>=</mo>
+                      <mn>1</mn>
+                      <mo>−</mo>
+                      <mo stretchy="false">(</mo>
+                      <mn>2</mn>
+                      <mi>D</mi>
+                      <mo>+</mo>
+                      <msup>
+                        <mi>D</mi>
+                        <mn>2</mn>
+                      </msup>
+                      <mo stretchy="false">)</mo>
+                      <mo>+</mo>
+                      <mo stretchy="false">(</mo>
+                      <mn>2</mn>
+                      <mi>D</mi>
+                      <mo>+</mo>
+                      <msup>
+                        <mi>D</mi>
+                        <mn>2</mn>
+                      </msup>
+                      <msup>
+                        <mo stretchy="false">)</mo>
+                        <mn>2</mn>
+                      </msup>
+                      <mo>−</mo>
+                      <mo>⋯</mo>
+                    </mrow>
+                    <annotation encoding="application/x-tex">\dfrac{1}{(D+1)^2} = \dfrac{1}{1 + (2D + D^2)} = 1 - (2D +
+                      D^2) + (2D + D^2)^2 - \cdots</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mopen">(</span><span class="mord mathnormal"
+                                  style="margin-right:0.0278em;">D</span><span class="mspace"
+                                  style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                                  style="margin-right:0.2222em;"></span><span class="mord">1</span><span
+                                  class="mclose"><span class="mclose">)</span><span class="msupsub"><span
+                                      class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                          style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span
+                                              class="pstrut" style="height:2.7em;"></span><span
+                                              class="sizing reset-size6 size3 mtight"><span
+                                                class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span
+                              style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span
+                                class="frac-line" style="border-bottom-width:0.04em;"></span></span><span
+                              style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span
+                                class="mord"><span class="mord">1</span></span></span></span><span
+                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                            style="height:0.936em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                    style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                    style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                    style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                                  class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                                  class="mopen">(</span><span class="mord">2</span><span class="mord mathnormal"
+                                  style="margin-right:0.0278em;">D</span><span class="mspace"
+                                  style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                                  style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal"
+                                    style="margin-right:0.0278em;">D</span><span class="msupsub"><span
+                                      class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                          style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span
+                                              class="pstrut" style="height:2.7em;"></span><span
+                                              class="sizing reset-size6 size3 mtight"><span
+                                                class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                                  class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                                style="height:3em;"></span><span class="frac-line"
+                                style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                          class="vlist-r"><span class="vlist"
+                            style="height:0.936em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                    style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                    style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                    style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span
+                    class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span
+                    class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                    class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord"><span
+                      class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span
+                        class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span
+                              style="top:-3.113em;margin-right:0.05em;"><span class="pstrut"
+                                style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                  class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                    class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                    class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span
+                  class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span
+                    class="mopen">(</span><span class="mord">2</span><span class="mord mathnormal"
+                    style="margin-right:0.0278em;">D</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord"><span
+                      class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span
+                        class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span
+                              style="top:-3.113em;margin-right:0.05em;"><span class="pstrut"
+                                style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                  class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                    class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span
+                          class="vlist-r"><span class="vlist" style="height:0.8641em;"><span
+                              style="top:-3.113em;margin-right:0.05em;"><span class="pstrut"
+                                style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                  class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                    class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:0.313em;"></span><span class="minner">⋯</span></span></span></span></span><br>
+          截断到 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <msup>
+                      <mi>D</mi>
+                      <mn>1</mn>
+                    </msup>
+                  </mrow>
+                  <annotation encoding="application/x-tex">D^1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal"
+                    style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span>：<span
+            class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>−</mo>
+                    <mn>2</mn>
+                    <mi>D</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">1 - 2D</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.6833em;"></span><span class="mord">2</span><span class="mord mathnormal"
+                  style="margin-right:0.0278em;">D</span></span></span></span>。<br>
+          作用在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>x</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">x</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> 上：<span
+            class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mo stretchy="false">(</mo>
+                    <mn>1</mn>
+                    <mo>−</mo>
+                    <mn>2</mn>
+                    <mi>D</mi>
+                    <mo stretchy="false">)</mo>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mi>x</mi>
+                    <mo>−</mo>
+                    <mn>2</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">(1 - 2D)x = x - 2</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span
+                  class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                  class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span
+                class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span
+                  class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                  class="mclose">)</span><span class="mord mathnormal">x</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>。
+        </li>
+        <li><strong>若<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <semantics>
+                    <mrow>
+                      <mi>λ</mi>
+                    </mrow>
+                    <annotation encoding="application/x-tex">\lambda</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span>
+            是特征根时</strong>，<span class="katex"><span class="katex-mathml"><math
+                xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>P</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>λ</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">P(\lambda)=0</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                  class="mord mathnormal">λ</span><span class="mclose">)</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.6444em;"></span><span class="mord">0</span></span></span></span><br>
+          此时 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>P</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>D</mi>
+                    <mo>+</mo>
+                    <mi>λ</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">P(D+\lambda)</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal"
+                  style="margin-right:0.0278em;">D</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span
+                  class="mclose">)</span></span></span></span> 的常数项<span class="katex"><span class="katex-mathml"><math
+                xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>P</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>λ</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">P(\lambda)</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                  class="mord mathnormal">λ</span><span class="mclose">)</span></span></span></span>为零，需要先提取 <span
+            class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>D</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">D</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.6833em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.0278em;">D</span></span></span></span> 的公因子。<br>
+          设 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>λ</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\lambda</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span> 是 <span
+            class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>k</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">k</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.6944em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.0315em;">k</span></span></span></span> 重特征根，则 <span class="katex"><span
+              class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>P</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>D</mi>
+                    <mo>+</mo>
+                    <mi>λ</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">P(D+\lambda)</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal"
+                  style="margin-right:0.0278em;">D</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span
+                  class="mclose">)</span></span></span></span> 可写为 <span class="katex"><span class="katex-mathml"><math
+                xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <msup>
+                      <mi>D</mi>
+                      <mi>k</mi>
+                    </msup>
+                    <mo>⋅</mo>
+                    <mi>R</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>D</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">D^k \cdot R(D)</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.8491em;"></span><span class="mord"><span class="mord mathnormal"
+                    style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.8491em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mathnormal mtight"
+                                style="margin-right:0.0315em;">k</span></span></span></span></span></span></span></span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.0077em;">R</span><span class="mopen">(</span><span class="mord mathnormal"
+                  style="margin-right:0.0278em;">D</span><span class="mclose">)</span></span></span></span>，其中 <span
+            class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>R</mi>
+                    <mo stretchy="false">(</mo>
+                    <mn>0</mn>
+                    <mo stretchy="false">)</mo>
+                    <mo mathvariant="normal">≠</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">R(0) \neq 0</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.0077em;">R</span><span class="mopen">(</span><span class="mord">0</span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span
+                  class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span
+                            class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span
+                            class="inner"><span class="mord"><span class="mrel"></span></span></span><span
+                            class="fix"></span></span></span></span></span><span class="mspace nobreak"></span><span
+                    class="mrel">=</span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span
+                class="base"><span class="strut" style="height:0.6444em;"></span><span
+                  class="mord">0</span></span></span></span>。<br>
+          此时 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mi>P</mi>
+                          <mo stretchy="false">(</mo>
+                          <mi>D</mi>
+                          <mo>+</mo>
+                          <mi>λ</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                      </mfrac>
+                    </mstyle>
+                    <mo>=</mo>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <msup>
+                          <mi>D</mi>
+                          <mi>k</mi>
+                        </msup>
+                      </mfrac>
+                    </mstyle>
+                    <mo>⋅</mo>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mi>R</mi>
+                          <mo stretchy="false">(</mo>
+                          <mi>D</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\dfrac{1}{P(D+\lambda)} = \dfrac{1}{D^k} \cdot
+                    \dfrac{1}{R(D)}</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal"
+                                style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                                class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace"
+                                style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                                style="margin-right:0.2222em;"></span><span class="mord mathnormal">λ</span><span
+                                class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                              style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.936em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span><span class="mspace"
+                  style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                  style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span
+                                  class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                                  class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.7751em;"><span style="top:-2.989em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight"
+                                              style="margin-right:0.0315em;">k</span></span></span></span></span></span></span></span></span></span><span
+                            style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.686em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span><span class="mspace"
+                  style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal"
+                                style="margin-right:0.0077em;">R</span><span class="mopen">(</span><span
+                                class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                                class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                              style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.936em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span></span></span></span>，其中 <span class="katex"><span
+              class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <msup>
+                          <mi>D</mi>
+                          <mi>k</mi>
+                        </msup>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\dfrac{1}{D^k}</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span
+                                  class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                                  class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.7751em;"><span style="top:-2.989em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight"
+                                              style="margin-right:0.0315em;">k</span></span></span></span></span></span></span></span></span></span><span
+                            style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.686em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span></span></span></span> 表示 <span class="katex"><span
+              class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>k</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">k</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.6944em;"></span><span class="mord mathnormal"
+                  style="margin-right:0.0315em;">k</span></span></span></span> 次积分，而 <span class="katex"><span
+              class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mi>R</mi>
+                          <mo stretchy="false">(</mo>
+                          <mi>D</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\dfrac{1}{R(D)}</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal"
+                                style="margin-right:0.0077em;">R</span><span class="mopen">(</span><span
+                                class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                                class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                              style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.936em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span></span></span></span> 用级数方法计算。<br>
+          <strong>例</strong>：计算 <span class="katex"><span class="katex-mathml"><math
+                xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <msup>
+                            <mi>D</mi>
+                            <mn>2</mn>
+                          </msup>
+                          <mo>+</mo>
+                          <mi>D</mi>
+                        </mrow>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\dfrac{1}{D^2 + D}</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:2.0908em;vertical-align:-0.7693em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span
+                                  class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                                  class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                        style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span
+                                            class="pstrut" style="height:2.7em;"></span><span
+                                            class="sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                                class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span
+                                class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal"
+                                style="margin-right:0.0278em;">D</span></span></span><span style="top:-3.23em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.7693em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span></span></span></span> 的升幂展开到 <span class="katex"><span
+              class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <msup>
+                      <mi>D</mi>
+                      <mn>1</mn>
+                    </msup>
+                  </mrow>
+                  <annotation encoding="application/x-tex">D^1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal"
+                    style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span>
+          项。<br>
+          <span class="katex-display"><span class="katex"><span class="katex-mathml"><math
+                  xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                  <semantics>
+                    <mrow>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mrow>
+                            <msup>
+                              <mi>D</mi>
+                              <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mi>D</mi>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>=</mo>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mi>D</mi>
+                        </mfrac>
+                      </mstyle>
+                      <mo>⋅</mo>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mrow>
+                            <mn>1</mn>
+                            <mo>+</mo>
+                            <mi>D</mi>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>=</mo>
+                      <mstyle scriptlevel="0" displaystyle="true">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mi>D</mi>
+                        </mfrac>
+                      </mstyle>
+                      <mo>⋅</mo>
+                      <mo stretchy="false">(</mo>
+                      <mn>1</mn>
+                      <mo>−</mo>
+                      <mi>D</mi>
+                      <mo>+</mo>
+                      <msup>
+                        <mi>D</mi>
+                        <mn>2</mn>
+                      </msup>
+                      <mo>−</mo>
+                      <mo>⋯</mo>
+                      <mtext> </mtext>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <annotation encoding="application/x-tex">\dfrac{1}{D^2 + D} = \dfrac{1}{D} \cdot \dfrac{1}{1 + D} =
+                      \dfrac{1}{D} \cdot (1 - D + D^2 - \cdots)</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height:2.0908em;vertical-align:-0.7693em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span
+                                    class="mord mathnormal" style="margin-right:0.0278em;">D</span><span
+                                    class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                          style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span
+                                              class="pstrut" style="height:2.7em;"></span><span
+                                              class="sizing reset-size6 size3 mtight"><span
+                                                class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span
+                                  class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal"
+                                  style="margin-right:0.0278em;">D</span></span></span><span style="top:-3.23em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="frac-line"
+                                style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                          class="vlist-r"><span class="vlist"
+                            style="height:0.7693em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                    style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                    style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                    style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord mathnormal" style="margin-right:0.0278em;">D</span></span></span><span
+                              style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span
+                                class="frac-line" style="border-bottom-width:0.04em;"></span></span><span
+                              style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span
+                                class="mord"><span class="mord">1</span></span></span></span><span
+                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                            style="height:0.686em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                    style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:2.0908em;vertical-align:-0.7693em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                                  class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                                  class="mord mathnormal" style="margin-right:0.0278em;">D</span></span></span><span
+                              style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span
+                                class="frac-line" style="border-bottom-width:0.04em;"></span></span><span
+                              style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span
+                                class="mord"><span class="mord">1</span></span></span></span><span
+                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                            style="height:0.7693em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                    style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                    style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                    style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span
+                      class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                          class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                                class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                  class="mord mathnormal" style="margin-right:0.0278em;">D</span></span></span><span
+                              style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span
+                                class="frac-line" style="border-bottom-width:0.04em;"></span></span><span
+                              style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span
+                                class="mord"><span class="mord">1</span></span></span></span><span
+                            class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                            style="height:0.686em;"><span></span></span></span></span></span><span
+                      class="mclose nulldelimiter"></span></span><span class="mspace"
+                    style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span
+                    class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span
+                    class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span
+                  class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span
+                    class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:0.9474em;vertical-align:-0.0833em;"></span><span class="mord"><span
+                      class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="msupsub"><span
+                        class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span
+                              style="top:-3.113em;margin-right:0.05em;"><span class="pstrut"
+                                style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                  class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                    class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                    style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                    style="height:1em;vertical-align:-0.25em;"></span><span class="minner">⋯</span><span class="mspace"
+                    style="margin-right:0.1667em;"></span><span class="mclose">)</span></span></span></span></span><br>
+          截断到 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <msup>
+                      <mi>D</mi>
+                      <mn>1</mn>
+                    </msup>
+                  </mrow>
+                  <annotation encoding="application/x-tex">D^1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal"
+                    style="margin-right:0.0278em;">D</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                            style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span>：<span
+            class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mi>D</mi>
+                      </mfrac>
+                    </mstyle>
+                    <mo>−</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\dfrac{1}{D} - 1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal"
+                                style="margin-right:0.0278em;">D</span></span></span><span style="top:-3.23em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.686em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span><span class="mspace"
+                  style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>。<br>
+          作用在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mi>x</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">x</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>（即 <span
+            class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <msup>
+                      <mi>x</mi>
+                      <mn>1</mn>
+                    </msup>
+                  </mrow>
+                  <annotation encoding="application/x-tex">x^1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal">x</span><span
+                    class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                          style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                              style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span>）上：<span
+            class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mi>D</mi>
+                      </mfrac>
+                    </mstyle>
+                    <mi>x</mi>
+                    <mo>−</mo>
+                    <mn>1</mn>
+                    <mo>⋅</mo>
+                    <mi>x</mi>
+                    <mo>=</mo>
+                    <mstyle scriptlevel="0" displaystyle="true">
+                      <mfrac>
+                        <msup>
+                          <mi>x</mi>
+                          <mn>2</mn>
+                        </msup>
+                        <mn>2</mn>
+                      </mfrac>
+                    </mstyle>
+                    <mo>−</mo>
+                    <mi>x</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\dfrac{1}{D}x - 1\cdot x = \dfrac{x^2}{2} - x</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal"
+                                style="margin-right:0.0278em;">D</span></span></span><span style="top:-3.23em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                        class="vlist-r"><span class="vlist"
+                          style="height:0.686em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span><span class="mord mathnormal">x</span><span
+                  class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut"
+                  style="height:2.1771em;vertical-align:-0.686em;"></span><span class="mord"><span
+                    class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height:1.4911em;"><span style="top:-2.314em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span
+                                class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                              style="height:3em;"></span><span class="frac-line"
+                              style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                              class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span
+                                  class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span
+                                      class="vlist-r"><span class="vlist" style="height:0.8141em;"><span
+                                          style="top:-3.063em;margin-right:0.05em;"><span class="pstrut"
+                                            style="height:2.7em;"></span><span
+                                            class="sizing reset-size6 size3 mtight"><span
+                                              class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height:0.686em;"><span></span></span></span></span></span><span
+                    class="mclose nulldelimiter"></span></span><span class="mspace"
+                  style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace"
+                  style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut"
+                  style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>。
+        </li>
+      </ol>
+    </blockquote>
+    <blockquote>
+      <p><strong>封装了什么？</strong><br>
+        计算 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+                <mrow>
+                  <mstyle scriptlevel="0" displaystyle="true">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mrow>
+                        <mi>P</mi>
+                        <mo stretchy="false">(</mo>
+                        <mi>D</mi>
+                        <mo>+</mo>
+                        <mi>λ</mi>
+                        <mo stretchy="false">)</mo>
+                      </mrow>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <annotation encoding="application/x-tex">\dfrac{1}{P(D+\lambda)}</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height:2.2574em;vertical-align:-0.936em;"></span><span class="mord"><span
+                  class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span
+                      class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span
+                            class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal"
+                              style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span
+                              class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace"
+                              style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace"
+                              style="margin-right:0.2222em;"></span><span class="mord mathnormal">λ</span><span
+                              class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut"
+                            style="height:3em;"></span><span class="frac-line"
+                            style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span
+                            class="pstrut" style="height:3em;"></span><span class="mord"><span
+                              class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span
+                      class="vlist-r"><span class="vlist"
+                        style="height:0.936em;"><span></span></span></span></span></span><span
+                  class="mclose nulldelimiter"></span></span></span></span></span> 本质上是一个代数操作。<br>
+        这相当于把“设 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+                <mrow>
+                  <mi>Q</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <annotation encoding="application/x-tex">Q(x)</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span
+                class="mopen">(</span><span class="mord mathnormal">x</span><span
+                class="mclose">)</span></span></span></span> → 代入 → 比较系数 → 解方程组”这一整套流程，封装成了“展开算子 → 逐项求导”的机械计算。</p>
+    </blockquote>
     <hr>
     <h3 id="附录e4三角函数型--复数封装">附录E.4：三角函数型 —— 复数封装 </h3>
     <p>当非齐次项含有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
